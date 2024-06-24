@@ -1,26 +1,26 @@
 @echo off
-echo æ­£åœ¨æ‹‰å–æœ€æ–°ä»£ç 
+echo ÕıÔÚÀ­È¡×îĞÂ´úÂë
 setlocal enabledelayedexpansion
 
-:: æ‹‰å–æœ€æ–°ä»£ç 
+:: À­È¡×îĞÂ´úÂë
 git pull origin master
 
-:: æç¤ºç”¨æˆ·è¾“å…¥æäº¤æ¶ˆæ¯
+:: ÌáÊ¾ÓÃ»§ÊäÈëÌá½»ÏûÏ¢
 set /p commitMessage=Enter the commit message:
 
-:: æ£€æŸ¥æ˜¯å¦æœ‰è¾“å…¥
+:: ¼ì²éÊÇ·ñÓĞÊäÈë
 if "!commitMessage!"=="" (
     echo Commit message is required.
     exit /b 1
 )
 
-:: æ·»åŠ æ›´æ”¹åˆ°æš‚å­˜åŒº
+:: Ìí¼Ó¸ü¸Äµ½Ôİ´æÇø
 git add .
 
-:: æäº¤æ›´æ”¹
+:: Ìá½»¸ü¸Ä
 git commit -m "!commitMessage!"
 
-:: æ¨é€åˆ°è¿œç¨‹ä»“åº“
+:: ÍÆËÍµ½Ô¶³Ì²Ö¿â
 git push origin master
 
 echo Done.
