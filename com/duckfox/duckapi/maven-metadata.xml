@@ -3,11 +3,12 @@
   <groupId>com.duckfox</groupId>
   <artifactId>duckapi</artifactId>
   <versioning>
-    <release>2.7</release>
+    <release>2.71</release>
     <versions>
       <version>2.6</version>
       <version>2.7</version>
+      <version>2.71</version>
     </versions>
-    <lastUpdated>20240624225809</lastUpdated>
+    <lastUpdated>20240625011216</lastUpdated>
   </versioning>
 </metadata>
